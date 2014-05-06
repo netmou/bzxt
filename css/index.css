@@ -140,8 +140,11 @@ td,th{
     position: absolute;
     width:100px;
     height:100px;
-    left:0px;
+    left:40px;
     z-index: 100;
+}
+#nav{
+    margin-right:30px;
 }
 #slide{
     position:relative;
