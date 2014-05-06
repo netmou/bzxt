@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <script src="js/slide.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+        <script  type="text/javascript">
+            //预加载图片
+            var back=new Array();
+            for(var i=1;i<9;i++){
+                back[i]=new Image();
+                back[i].src="images/w"+i+".jpg";
+            }
+            for(var i=9;i<16;i++){
+                back[i]=new Image();
+                back[i].src="images/q"+(i-7)+".jpg";
+            }
+            $(function() {
+                Slide.initSlide({
+                    length: 3,
+                    width:parseInt($(".on-parent").css("width")),
+                    dest: $(".on-parent").get(0)
+                });
+            });
+            $(function(){
+                $("#header ul li").hover(function(){
+                    $(this).find("img").get(0).src="images/w"+($(this).index()+1)+".jpg";
+                },function(){
+                    if($(this).index()===0){
+                        return null;
+                    }
+                     $(this).find("img").get(0).src="images/q"+($(this).index()+1)+".jpg";
+                });
+            });
+            $(function(){
+                var bakcolor=null;
+                $("#news ul").find("a").hover(function(){
+                    bakcolor=$(this).css("color");
+                    $(this).css("color","red");
+                },function(){
+                     $(this).css("color",bakcolor);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="header" class="cnt">
+            <img class="logo" src="images/001.jpg" alt="alt"/>
+            <ul class="list rgt">
+                <li>
+                    <a href="#"><img src="images/w1.jpg" alt="alt"/></a> 
+                </li>
+                <li>
+                    <a href="#"><img src="images/q2.jpg" alt="alt"/></a> 
+                </li>
+                <li>
+                    <a href="#"><img src="images/q3.jpg" alt="alt"/></a> 
+                </li>
+                <li>
+                    <a href="#"><img src="images/q4.jpg" alt="alt"/></a> 
+                </li>
+                <li>
+                    <a href="#"><img src="images/q5.jpg" alt="alt"/></a> 
+                </li>
+                <li>
+                    <a href="#"><img src="images/q6.jpg" alt="alt"/></a> 
+                </li>
+                <li>
+                    <a href="#"><img src="images/q7.jpg" alt="alt"/></a> 
+                </li>
+                <li>
+                    <a href="#"><img src="images/q8.jpg" alt="alt"/></a> 
+                </li>
+            </ul>
+        </div>
+        <div id="slide" class="cnt">
+            <ul class="on-parent">
+                <li><img src="images/slide1.jpg" alt="fds"></li>
+                <li><img src="images/slide2.jpg" alt="fds"></li>
+                <li><img src="images/slide3.jpg" alt="fds"></li>
+            </ul>
+            <ul class="on-tab">
+                <li><img src="images/slide1.jpg" alt="fds"></li>
+                <li><img src="images/slide2.jpg" alt="fds"></li>
+                <li><img src="images/slide3.jpg" alt="fds"></li>
+            </ul>
+        </div>
+
+        <div id="chain" class="cnt">
+            <img src="images/index6.jpg" alt="fds">
+            <ul class="list">
+                <li class="clr">
+                    <img src="images/index-red1_10.jpg" alt="alt" class="lft"/>
+                    <h3>建筑智能化</h3>
+                    <p>拓普网络秉承“拓普智能化 引领科技现代生活”这一宗旨，致力于为临沂人民的智能化生活增添光彩!</p>
+                </li>
+                <li class="clr">
+                    <img src="images/index-red1_10.jpg" alt="alt" class="lft"/>
+                    <h3>建筑智能化</h3>
+                    <p>拓普网络秉承“拓普智能化 引领科技现代生活”这一宗旨，致力于为临沂人民的智能化生活增添光彩!</p>
+                </li>
+                <li class="clr">
+                    <img src="images/index-red1_10.jpg" alt="alt" class="lft"/>
+                    <h3>建筑智能化</h3>
+                    <p>拓普网络秉承“拓普智能化 引领科技现代生活”这一宗旨，致力于为临沂人民的智能化生活增添光彩!</p>
+                </li>
+                <li class="clr">
+                    <img src="images/index-red1_10.jpg" alt="alt" class="lft"/>
+                    <h3>建筑智能化</h3>
+                    <p>拓普网络秉承“拓普智能化 引领科技现代生活”这一宗旨，致力于为临沂人民的智能化生活增添光彩!</p>
+                </li>
+            </ul>
+        </div>
+        <div id="content" class="cnt clr">
+            <div id="news" class="lft">
+                <ul>
+                    <li>
+                        <a href="/index.php?r=xwzx/8/614" target="_self">省关工委主任高新亭视察中印软件产业园 </a>
+                        <span>[2014-04-02]</span>
+                    </li>
+                    <li>
+                        <a href="/index.php?r=xwzx/8/614" target="_self">省关工委主任高新亭视察中印软件产业园 </a>
+                        <span>[2014-04-02]</span>
+                    </li>
+                    <li>
+                        <a href="/index.php?r=xwzx/8/614" target="_self">省关工委主任高新亭视察中印软件产业园 </a>
+                        <span>[2014-04-02]</span>
+                    </li>
+                    <li>
+                        <a href="/index.php?r=xwzx/8/614" target="_self">省关工委主任高新亭视察中印软件产业园 </a>
+                        <span>[2014-04-02]</span>
+                    </li>
+                    <li>
+                        <a href="/index.php?r=xwzx/8/614" target="_self">省关工委主任高新亭视察中印软件产业园 </a>
+                        <span>[2014-04-02]</span>
+                    </li>
+
+                </ul>
+            </div>
+            <div id="video" class="lft">
+                <object type="application/x-shockwave-flash" data="images/player.swf" id="playerF" width="100%" height="100%">
+                    <param name="quality" value="high">
+                    <param name="allowfullscreen" value="true">
+                    <param name="allowscriptaccess" value="sameDomain">
+                    <param name="wmode" value="transparent">
+                    <param name="flashvars" value="hq=http://localhost:8383/htm/images/09.mp4&amp;autoplay=true">
+                </object>
+
+            </div>
+            <div id="connect" class="rgt">
+                <table>
+                    <tr>
+                        <td width="45" valign="top">传  真：</td>
+                        <td width="170">0539-6012997</td>
+                    </tr>
+                    <tr>
+                        <td valign="top">邮  编：</td>
+                        <td>276034</td>
+                    </tr>
+                    <tr>
+                        <td valign="top">地  址：</td>
+                        <td>山东省临沂市国家级经济技术
+                            开发区投资创业服务中心四楼
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="foot">
+            <table width="950" align="center">
+                <tr>
+                    <td width="131" align="center" height="31" valign="middle">
+                        <select name="select" onchange="javascript:window.open(this.options[this.selectedIndex].value), this.selectedIndex = 0" class="selectWebLinkWidth" style="width:130px">
+                            <option value="" selected="selected">== 关于拓普 ==</option>
+
+                            <option value="#">关于拓普
+                            </option>
+                        </select>
+                    </td>        
+                    <td width="131" align="center" height="31" valign="middle" id="select">
+                        <select name="select" onchange="javascript:window.open(this.options[this.selectedIndex].value), this.selectedIndex = 0" class="selectWebLinkWidth" style="width:130px">
+                            <option value="" selected="selected">== 常用链接 ==</option>
+                            <option value="http://www.baidu.com">百度</option>
+                            <option value="http://www.sina.com.cn/">新浪</option>
+                            <option value="http://www.sohu.com/">搜狐</option>
+                            <option value="http://www.qq.com/">腾讯</option>
+                        </select>
+                    </td>        
+                    <td width="131" align="center" height="31" valign="middle" id="select">
+                        <select name="select" onchange="javascript:window.open(this.options[this.selectedIndex].value), this.selectedIndex = 0" class="selectWebLinkWidth" style="width:130px">
+                            <option value="" selected="selected">== 相关网站 ==</option>
+                            <option value="http://cnintrade.com/">中印贸易网</option>
+                            <option value="http://www.linyi.com">临沂网</option>
+                        </select>
+                    </td>      
+                    <td width="126" rowspan="2"  align="center" valign="middle"><a href="#" target="_blank"><img src="images/b.jpg" width="102" height="37"></a></td>
+                    <td width="128" rowspan="2" align="center" valign="middle"><a href="#" target="_blank"><img src="images/cnnic.png" width="102" height="37"></a></td>
+                </tr>
+                <tr>
+                    <td height="28" colspan="5" align="left" valign="middle">版权所有 © 1999-2013  临沂市拓普网络股份有限公司　经营许可证编号：鲁B2-20041049号  鲁ICP备09006275号</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
+
+
