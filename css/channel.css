@@ -1,0 +1,292 @@
+body{
+    margin:0px 0px;
+    padding:0px 0px;
+}
+a{
+    text-decoration: none;
+    color:#333;
+}
+ul{
+    margin:0px 0px;
+    padding:0px 0px;
+    list-style: none;
+}
+hr{
+    border-color: #ddd;
+    border-bottom: none;
+    height:0px;
+}
+img{
+    border:none;
+}
+table{
+    border-collapse:collapse;
+}
+td,th{
+    border:solid 1px #666;
+    padding:2px 5px;
+}
+.anchor a{
+    color:blue;
+}
+.cnt{
+    margin:0px auto;
+    overflow: hidden;
+}
+.lft{
+    float:left;
+}
+.rgt{
+    float:right;
+}
+.abs {
+    position:absolute;
+}
+.clr { 
+    zoom: 1; 
+}
+.clr:after { 
+    content: "."; 
+    display: block; 
+    height: 0px; 
+    clear: both; 
+    visibility: hidden; 
+} 
+
+.head{
+    border:1px #ddd solid;
+    border-bottom:none;
+    background-repeat:repeat-x;
+    background-size:contain;
+    zoom: 1;
+}
+.head:after{
+    content: "."; 
+    display: block; 
+    height: 0px; 
+    clear: both; 
+    visibility: hidden; 
+}
+.head .cpt{
+    padding:3px 3px;
+    font-size:18px;
+    font-weight: bold;
+    float: left;
+}
+.head .bar{
+    padding:3px 3px;
+    font-size:16px;
+    float: left;
+}
+.head .more{
+    font-size: 14px;
+    float:right;
+    font-weight:normal;
+    padding:5px 5px;
+    padding-left:7px;
+    background-repeat:repeat-x;
+    background-size:contain;
+}
+
+
+.view{
+    border:1px #ddd solid;
+    border-left:1px #ccc solid;
+    border-top:1px #ccc solid;
+    padding:10px 10px;
+    font-size: 16px;
+    color:#222;
+}
+
+.panel{
+    border:1px #ddd solid;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.list{
+    zoom: 1;
+}
+.list:after { 
+    content: "."; 
+    display: block; 
+    height: 0px; 
+    clear: both; 
+    visibility: hidden; 
+} 
+.list ul{
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+
+.list li{
+    float:left;
+    padding:5px 5px;
+    list-style: none;
+}
+
+.list first{
+    padding-left:2px;   
+}
+
+#header{
+    position: relative;
+    background-image: url(../images/bj.jpg);
+    height:100px;
+    width:980px;
+}
+#header .logo{
+    position: absolute;
+    width:100px;
+    height:100px;
+    left:40px;
+    z-index: 100;
+}
+#nav{
+    margin-right:30px;
+}
+#content{
+    width: 973px;
+    border: 3px solid #4187d5;
+    margin: 0 auto;
+    font-size:12px;
+    background: #fff url(../images/ny_13.jpg) repeat-y;
+    margin-bottom: 6px;
+}
+#left{
+    width:228px;
+}
+#left dd{
+    margin:0px;
+    padding:0px;
+    
+}
+#right{
+    width:743px;
+}
+
+#service{
+    color: rgb(51, 51, 51);
+    font-size: 12px;
+    height: 162px;
+    margin-bottom: 0px;
+    margin-left: 7px;
+    margin-right: 7px;
+    width: 214px;
+}
+#service{
+    width:214px;
+    margin:0 auto;
+}
+#service dt{
+    height:33px;
+    line-height:33px;
+    border-bottom:3px solid #3db4ec;
+    color:#4674ae;
+    font-weight:bold;
+    font-size:16px;
+    font-family:"微软雅黑","黑体";
+    text-indent:2em;
+    margin-bottom:6px;
+}
+#service dd{
+    height:30px;
+}
+#service dd a{
+    display:block;
+    height:30px;
+    width:192px;
+    margin:0 auto;
+    line-height:30px;
+    background:url(../images/ny_06.jpg) no-repeat center bottom;
+    text-indent:2em;
+}
+#service dd a:hover{
+    background:url(../images/ny_03-02.jpg) no-repeat;
+    color:#ffe4b3;
+    font-weight:bold;
+}
+#contact{
+    width:205px;
+    margin:0 auto;
+    margin-top:12px;
+    font-size:12px;
+    background:url(../images/ny_30.jpg) no-repeat left bottom;
+    margin-bottom:12px;
+    padding-bottom:8px;
+}
+#contact dt{
+    height:55px;
+    background:url(../images/ny_17.jpg) no-repeat;
+}
+#contact dd{
+    width:160px;
+    height:35px;
+    line-height:35px;
+    margin:0 auto;
+}
+#contact dd a{
+    font-weight:bold;
+    padding-left:30px;
+}
+.bz1{
+    background:url(../images/ny_21.jpg) no-repeat left center;
+}
+.bz2{
+    background:url(../images/ny_24.jpg) no-repeat left center;
+}
+.bz3{
+    background:url(../images/ny_26.jpg) no-repeat left center;
+}
+#contact .bz4{
+    background:url(../images/ny_28.jpg) no-repeat left center;
+}
+#contact .bz4 a{
+    color:#dd6301;
+}
+#contact .bz5{
+    padding-left:52px;
+    font-weight:bold;
+    line-height: 10px;
+    font-size:12px;
+    color:#c20516;
+}
+#weizhi{
+    height:29px;
+    width:735px;
+    margin:0 auto;
+    background:url(../images/ny_03.jpg) repeat-x;
+    margin-top:6px;
+    border:1px solid #d6d6d6;
+    line-height:29px;
+    text-indent:2em;
+}
+#banner{
+    width:719px;
+    height:131px;
+    margin:0 auto;
+    margin-top:6px;
+}
+#main{
+    width:719px;
+    margin:0 auto;
+    padding:8px;
+    line-height:1.75;
+}
+#foot{  
+    margin-top:5px;
+    font-size:12px;
+    background-image: url(../images/index_32.jpg);
+}
+#foot td{
+    border:none;
+}
+#foot th{
+    border:none;
+}
+
+
+
+
+
