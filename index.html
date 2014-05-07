@@ -145,11 +145,11 @@
             <div id="video" class="lft">
             </div>
             <script>
-                flowplayer("video", "player/flowplayer-3.2.18.swf", {
+                flowplayer("video", "player/flowplayer.commercial.swf", {
                     clip: {
                         autoPlay: false,
                         autoBuffering: true,
-                        baseUrl: 'http://localhost:8383/htm/images/'
+                        baseUrl: 'http://localhost:8383/htm/video/'
                     },
                     playlist: ['09.mp4'],
                     onLoad: function() {
@@ -157,12 +157,12 @@
                     },
                     plugins: {
                         controls: { 
-                            url: 'flowplayer.controls-3.2.16.swf',
+                            url: 'flowplayer.controls.swf',
                             playlist: true,
                             backgroundColor: '#aedaff',
                             tooltips: {
                                 buttons: true,
-                                fullscreen: 'Enter Fullscreen mode'
+                                fullscreen: '全屏'
                             }
                         }
                     }
